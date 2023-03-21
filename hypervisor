@@ -1,0 +1,11 @@
+#!/bin/bash
+desired_screen_count=32
+screen_count=$(screen -list | grep Sockets | grep -oP '(\d+)')
+
+if [[ $screen_count < $desired_screen_count ]]; then
+        amt_to_spawn=$(($desired_screen_count-$screen_count))
+        for i in $( seq 1 $amt_to_spawn )
+        do
+                $(screen -dm bash -c '')
+        done
+fi
