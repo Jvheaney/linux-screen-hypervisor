@@ -1,7 +1,7 @@
 # Linux Screen Hypervisor
 Linux hypervisor script written in BASH for maintaining a consistent amount of screens on a server.
 
-Works great if you have random crashes due to external circumstances and just need to keep a consistent amount of screen open. Super simple, works great.
+Works great if you have random crashes due to external circumstances and just need to keep a consistent amount of screens open. Super simple, works great.
 
 ## Setup
 <ol>
